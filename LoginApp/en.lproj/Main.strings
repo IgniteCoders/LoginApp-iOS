@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; configuration.title = "Create user"; ObjectID = "8sm-Yn-DJs"; */
+"8sm-Yn-DJs.configuration.title" = "Create user";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8sm-Yn-DJs"; */
+"8sm-Yn-DJs.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "9ay-Vc-63h"; */
+"9ay-Vc-63h.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "123456"; ObjectID = "9ay-Vc-63h"; */
+"9ay-Vc-63h.text" = "123456";
+
+/* Class = "UIButton"; configuration.title = "Sign in"; ObjectID = "seu-Nn-gZL"; */
+"seu-Nn-gZL.configuration.title" = "Sign in";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "seu-Nn-gZL"; */
+"seu-Nn-gZL.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "zlA-wW-Qi1"; */
+"zlA-wW-Qi1.placeholder" = "Username";
+
+/* Class = "UITextField"; text = "user1@mail.com"; ObjectID = "zlA-wW-Qi1"; */
+"zlA-wW-Qi1.text" = "user1@mail.com";
