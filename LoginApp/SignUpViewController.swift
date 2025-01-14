@@ -1,22 +1,24 @@
 //
-//  ViewController.swift
+//  SignUpViewController.swift
 //  LoginApp
 //
-//  Created by Tardes on 13/1/25.
+//  Created by Tardes on 14/1/25.
 //
 
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func createUser(_ sender: Any) {
         Auth.auth().createUser(withEmail: usernameTextField.text!, password: passwordTextField.text!) { authResult, error in
             if let error = error {
@@ -40,25 +42,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func signIn(_ sender: Any) {
-        Auth.auth().signIn(withEmail: usernameTextField.text!, password: passwordTextField.text!) { [unowned self] authResult, error in
-          //guard let strongSelf = self else { return }
-            if let error = error {
-                // Hubo un error
-                print(error)
-                
-                let alertController = UIAlertController(title: "Sign In", message: error.localizedDescription, preferredStyle: .alert)
-
-                alertController.addAction(UIAlertAction(title: "OK", style: .default))
-
-                self.present(alertController, animated: true, completion: nil)
-            } else {
-                // Todo correcto
-                print("User signs in successfully")
-                self.performSegue(withIdentifier: "goToHome", sender: nil)
-            }
-        }
-    }
 }
-
