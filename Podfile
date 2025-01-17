@@ -10,5 +10,6 @@ target 'LoginApp' do
   pod 'FirebaseCore'
   pod 'FirebaseAuth'
   pod 'GoogleSignIn'
+  pod 'FirebaseFirestore'
 
 end

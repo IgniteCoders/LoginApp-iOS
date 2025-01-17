@@ -15,6 +15,8 @@
 		B205CAE62D3584E4005A9D22 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B205CAE52D3584E4005A9D22 /* Base */; };
 		B205CAEE2D3589F4005A9D22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B205CAED2D3589F4005A9D22 /* GoogleService-Info.plist */; };
 		B20A393C2D36DAED004B5FAE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A393B2D36DAED004B5FAE /* SignUpViewController.swift */; };
+		B2F2C8332D3AC94100499D07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2C8322D3AC94100499D07 /* User.swift */; };
+		B2F2C8352D3AD2E500499D07 /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2C8342D3AD2E500499D07 /* VerifyEmailViewController.swift */; };
 		CBAEFB936C1C84D4CE865DB8 /* Pods_LoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B364E9C9A5A4013961470725 /* Pods_LoginApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		B205CAE72D3584E4005A9D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B205CAED2D3589F4005A9D22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B20A393B2D36DAED004B5FAE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B2F2C8322D3AC94100499D07 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2F2C8342D3AD2E500499D07 /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
 		B364E9C9A5A4013961470725 /* Pods_LoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,17 +88,43 @@
 		B205CAD82D3584E3005A9D22 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				B205CAED2D3589F4005A9D22 /* GoogleService-Info.plist */,
+				B2F2C8312D3AC91A00499D07 /* Utils */,
+				B2F2C8302D3AC90100499D07 /* Data */,
+				B2F2C82F2D3AC8EF00499D07 /* ViewControllers */,
 				B205CAD92D3584E3005A9D22 /* AppDelegate.swift */,
 				B205CADB2D3584E3005A9D22 /* SceneDelegate.swift */,
-				B205CADD2D3584E3005A9D22 /* SignInViewController.swift */,
 				B205CADF2D3584E3005A9D22 /* Main.storyboard */,
-				B205CAE22D3584E4005A9D22 /* Assets.xcassets */,
 				B205CAE42D3584E4005A9D22 /* LaunchScreen.storyboard */,
+				B205CAE22D3584E4005A9D22 /* Assets.xcassets */,
 				B205CAE72D3584E4005A9D22 /* Info.plist */,
-				B20A393B2D36DAED004B5FAE /* SignUpViewController.swift */,
+				B205CAED2D3589F4005A9D22 /* GoogleService-Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		B2F2C82F2D3AC8EF00499D07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B205CADD2D3584E3005A9D22 /* SignInViewController.swift */,
+				B20A393B2D36DAED004B5FAE /* SignUpViewController.swift */,
+				B2F2C8342D3AD2E500499D07 /* VerifyEmailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2F2C8302D3AC90100499D07 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B2F2C8322D3AC94100499D07 /* User.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B2F2C8312D3AC91A00499D07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +246,8 @@
 				B205CADE2D3584E3005A9D22 /* SignInViewController.swift in Sources */,
 				B205CADA2D3584E3005A9D22 /* AppDelegate.swift in Sources */,
 				B20A393C2D36DAED004B5FAE /* SignUpViewController.swift in Sources */,
+				B2F2C8332D3AC94100499D07 /* User.swift in Sources */,
+				B2F2C8352D3AD2E500499D07 /* VerifyEmailViewController.swift in Sources */,
 				B205CADC2D3584E3005A9D22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
